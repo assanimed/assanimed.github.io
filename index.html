@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="bootstrap.bundle.js"></script>
+    <title>BTS RECAP</title>
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="container-fluid navbar navbar-expand-md bg-dark sticky-top">
+            <a href="" class="navbar-brand text-danger">Decathlon</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="" class="nav-link">Stores</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Products</a>
+                </li>
+
+                <div class="btn-group">
+
+                </div>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Jobs</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Contact-us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                        international
+                      </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Africa</a></li>
+                        <li><a class="dropdown-item" href="#">Europe</a></li>
+                        <li><a class="dropdown-item" href="#">Middle East</a></li>
+                        <li><a class="dropdown-item" href="#">N&S America</a></li>
+                        <li><a class="dropdown-item" href="#">Asia</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search">
+                <button class="btn btn-outline-info" type="submit">Search</button>
+            </form>
+        </nav>
+    </header>
+
+    <!-- OFFCANVAS -->
+
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcan">
+        OPEN LEFT SIDE BAR
+      </button>
+
+    <div class="offcanvas offcanvas-start" id="offcan">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-group">
+                <li class="list-group-item"><a href="">Commandes</a></li>
+                <li class="list-group-item"><a href="">Factures</a></li>
+                <li class="list-group-item"><a href="">Paiments</a></li>
+                <li class="list-group-item"><a href="">Changements Adresse</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- OFFCANVAS END -->
+
+
+    <!-- COLLAPSE START -->
+
+
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#coll">
+        SHOW/HIDE Contract
+      </button>
+    </p>
+    <div class="collapse bg-warning p-1" id="coll">
+        <h1 class="text-danger">
+            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+        </h1>
+    </div>
+
+
+    <!-- COLLAPSE END -->
+
+    <!-- ALERT START -->
+
+    <div class="alert alert-danger bg-danger text-white">
+        <div class="d-flex justify-content-between">
+            <span class="fs-3">Gestion des cookies </span>
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus quo cumque hic! Ratione, quas distinctio. Provident nulla iure aperiam sit quo?</p>
+
+    </div>
+    <!-- ALERT END -->
+
+
+
+    <!-- TAB START -->
+
+    <ul class="nav nav-tabs" id="myTab">
+        <li class="nav-item">
+            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#commandes" type="button">commandes</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#paiments" type="button">Paiments</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#adress" type="button">Adresse</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#factures" type="button">Factures</button>
+        </li>
+    </ul>
+    <div class="tab-content container" id="tbContent">
+        <div class="tab-pane active" id="commandes">
+            <h1>HOME</h1>
+            <main>
+                <article>
+                    <h1>HTML</h1>
+                    <p>Langage pour la création des pages web</p>
+                    <a href="">Tutorials</a>
+                    <a href="">Exercices</a>
+                    <a href="">Quiz</a>
+                </article>
+                <article class="active">
+                    <h1>CSS</h1>
+                    <p>Langage pour les styles des pages web</p>
+                    <a href="">Tutorials</a>
+                    <a href="">Exercices</a>
+                    <a href="">Quiz</a>
+                </article>
+                <article>
+                    <h1>JavaScript</h1>
+                    <p>Langage de programmation des pages web</p>
+                    <a href="">Tutorials</a>
+                    <a href="">Exercices</a>
+                    <a href="">Quiz</a>
+                </article>
+
+            </main>
+
+        </div>
+        <div class="tab-pane" id="paiments">
+            <h1>Paiments</h1>
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Montant</th>
+                        <th>Numéro de confirmation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>15-02-2020</td>
+                        <td>12,000 DH</td>
+                        <td># 454895486</td>
+                    </tr>
+                    <tr>
+                        <td>15-02-2020</td>
+                        <td>12,000 DH</td>
+                        <td># 454895486</td>
+                    </tr>
+                    <tr>
+                        <td>15-02-2020</td>
+                        <td>12,000 DH</td>
+                        <td># 454895486</td>
+                    </tr>
+                    <tr>
+                        <td>15-02-2020</td>
+                        <td>12,000 DH</td>
+                        <td># 454895486</td>
+                    </tr>
+                    <tr>
+                        <td>15-02-2020</td>
+                        <td>12,000 DH</td>
+                        <td># 454895486</td>
+                    </tr>
+                    <tr>
+                        <td>15-02-2020</td>
+                        <td>12,000 DH</td>
+                        <td># 454895486</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="tab-pane" id="adress">
+            <h1>Adresse</h1>
+
+            <form action="" class="myForm">
+                <h2>Connexion</h2>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="lastname">Nom:</label>
+                <input type="text" name="lastname" id="lastname" required>
+
+                <label for="firstname">Prenom:</label>
+                <input type="text" name="firstname" id="firstname" required>
+
+                <label for="address">Adresse:</label>
+                <textarea name="address" id="address" cols="30" rows="5"></textarea>
+
+
+                <input type="submit" value="changer">
+
+                <div>Lire notre contrat de service ici 👉
+
+                    <a href="#myModal" data-bs-toggle="modal">Contract</a>
+
+
+
+
+                </div>
+
+            </form>
+
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header bg-warning">
+                            <h1 class="modal-title">Contrat de service </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body bg-secondary text-white">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quo nostrum maiores fugit fuga eveniet quasi soluta placeat! Aperiam aut debitis et placeat dolor natus, molestiae quos dolore maiores ex.
+                        </div>
+                        <div class="modal-footer bg-warning">
+                            <p>Contactez-nous au <a href="tel:+21264875458">064875458</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane " id="factures">
+
+        </div>
+    </div>
+
+    <!-- TAB END -->
+
+
+    <!-- MODAL START -->
+
+    <!-- <button type="button " class="btn btn-primary " data-bs-toggle="modal " data-bs-target="#modalID ">
+       SHOW/HIDE Contract
+      </button>
+
+     -->
+
+    <!-- MODAL END -->
+
+
+
+
+    <!-- <script>
+        let articles = document.querySelectorAll("article ")
+
+        for (let article of articles) {
+            article.addEventListener("mouseover ", function() {
+                for (let art of articles) {
+                    art.classList.remove("active ")
+                }
+                article.classList.add("active ")
+            })
+        }
+    </script> -->
+
+
+</body>
+
+</html>

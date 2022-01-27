@@ -1,0 +1,96 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    width: 96%;
+    justify-content: center;
+}
+
+main>* {
+    width: max(200px, 27%);
+}
+
+main>article {
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+article:hover,
+article.active {
+    border: 1px solid rgb(110, 117, 180);
+    background-color: rgb(212, 215, 238);
+    cursor: pointer;
+}
+
+article a {
+    padding: 17px 0;
+    background-color: blue;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 10px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+main>*> :where(h1, p) {
+    margin: 20px 0;
+}
+
+
+/*.myForm STYLE*/
+
+.myForm {
+    border: 1px solid rgb(110, 117, 180);
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 400px;
+    margin-bottom: 50px;
+}
+
+.myForm>* {
+    display: block;
+    text-align: left;
+}
+
+.myForm label {
+    font-size: 18px;
+}
+
+.myForm :is(input, textarea) {
+    width: 100%;
+}
+
+.myForm input:not([type=submit]) {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.myForm [type=submit] {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    background-color: rgb(214, 123, 123);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.myForm h2 {
+    margin: 15px 0;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.myForm :where(a, div) {
+    text-align: center;
+    margin: 5px;
+}
+
+textarea {
+    resize: none;
+    margin-bottom: 20px;
+}
