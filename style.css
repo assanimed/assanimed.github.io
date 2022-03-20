@@ -1,0 +1,118 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+* {
+    font-family: ExcellenceInMotion, "Helvetica Neue", sans-serif;
+}
+
+main {
+    height: 94%;
+    background-color: orange;
+    position: relative;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.infoContent {
+    position: absolute;
+    bottom: 30px;
+    right: 100px;
+    background-color: rgba(0, 0, 0, 0.575);
+    max-width: 550px;
+    color: #fff;
+}
+
+.carousel-item:nth-child(1) .infoContent {
+    max-width: 1000px;
+}
+
+.carousel-item:nth-child(2) .infoContent {
+    max-width: 700px;
+}
+
+.infoContent a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+.infoContent a::before {
+    content: "> "
+}
+
+.tabulation {
+    position: absolute;
+    top: 0;
+}
+
+#contents {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.nav-tabs .nav-item a {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.nav-tabs .nav-item:nth-child(2) a {
+    margin-left: 5px;
+}
+
+.nav-tabs .nav-item a:not(.active) {
+    background-color: #000 !important;
+    color: #fff;
+}
+
+.navMn ul li a {
+    border-bottom: 4px solid transparent;
+    transition: all .2s linear;
+    position: relative;
+}
+
+.navMn ul li a:hover {
+    border-bottom-color: orange !important;
+}
+
+.navMn ul li a::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgb(223, 180, 101);
+    display: block;
+    position: absolute;
+    top: -100%;
+    z-index: -1;
+    left: 0;
+}
+
+.navMn ul li a:hover::before {
+    animation: toDown .2s cubic-bezier(0.32, 0, 0, 0.85);
+}
+
+@keyframes toDown {
+    to {
+        top: 100%;
+    }
+}
+
+.offcanvas-body {
+    padding: 2rem 0;
+}
+
+.offcanvas-body>ul li {
+    padding: 0;
+}
+
+.offcanvas-body>ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 1rem 1.2rem;
+    font-size: 1.2rem;
+}

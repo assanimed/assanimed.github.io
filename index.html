@@ -1,1 +1,257 @@
-<h1>Hello world</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIR Brance, Commercial Airlines</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2add2d083f.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" sizes="48x48" href="https://www.static-af.com/assets/af/img/logo-48.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="navbar navbar-expand navbar-light bg-light container-fluid justify-content-between">
+            <div class="d-flex align-items-center" style="gap:20px">
+                <span style="cursor: pointer; "><i class="bi bi-list fs-3 " data-bs-toggle=offcanvas data-bs-target="#leftSide "></i></span>
+                <a href=" " class="navbar-brand ">
+                    <img src="af-logo.svg " alt=" ">
+                    <img src="partner.svg " alt=" ">
+                </a>
+            </div>
+            <ul class="navbar-nav ">
+                <li class="nav-item ">
+                    <div class="dropdown">
+                        <a href="" data-bs-toggle="dropdown" class="border rounded border-outline-dark nav-link dropdown-toggle">France - FR</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                                <a href="">English</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="">Spanish</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="">Arabic</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item ">
+                    <a href="#loginModal" class="nav-link" data-bs-toggle="modal">
+                        <span class="badge "><i class="bi bi-person-fill" style="color:#000;font-size:1.3em"></i></span>
+                        <span>Se connecter</span>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="#regModal" class="nav-link" data-bs-toggle="modal">Créer mon compte</a>
+                </li>
+            </ul>
+
+
+        </nav>
+
+        <div class="offcanvas offcanvas-start p-3" id="leftSide">
+            <div class="offcanvas-header">
+                <h3 class="offcanvas-title"></h3>
+                <a href="" data-bs-dismiss="offcanvas" class="btn-close"></a>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-action "><a href=" ">Acheter un billet</a></li>
+                    <li class="list-group-item list-group-item-action "><a href=" ">Enregistrement</a></li>
+                    <li class="list-group-item list-group-item-action "><a href=" ">Mes voyages</a></li>
+                    <li class="list-group-item list-group-item-action "><a href=" ">Informations</a></li>
+                    <li class="list-group-item list-group-item-action "><a href=" ">Nos vols</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="navMn container-fluid border-bottom border-dark">
+            <ul class="nav text">
+                <li class="nav-item">
+                    <a href="" class="nav-link fs-5 text-dark">Acheter un billet</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link fs-5 text-dark">Enregistrement</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link fs-5 text-dark">Mes réservations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link fs-5 text-dark">Informations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link fs-5 text-dark"><b>COVID-19</b></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+    <main>
+        <div id="slider" class="carousel slide h-100" style="background:red;" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button class="active" data-bs-target="#slider" data-bs-slide-to="0"></button>
+                <button data-bs-target="#slider" data-bs-slide-to="1"></button>
+                <button data-bs-target="#slider" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active bg-info h-100" style="position: relative;">
+                    <img src="slide1.jpg" class="w-100 h-100">
+                    <div class="infoContent p-3" style="position: absolute;">
+                        <b>NOS OFFRES IRRÉSISTIBLES VERS LE MONDE</b>
+                        <p>Des prix qui donnent envie de partir. Envolez-vous vers New York dès 349 €, Saint-Martin dès 379 €, Dubaï dès 429 €, La Havane dès 519 € et beaucoup d’autres destinations !</p>
+                        <p><a href="">INSCRIVEZ-VOUS</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="slide2.jpg" class="w-100 h-100">
+                    <div class="infoContent p-3">
+                        <b>NOS OFFRES IRRÉSISTIBLES VERS LE MONDE</b>
+                        <p>Devenez membre La Collection Air France et profitez en exclusivité de notre collection voyages de rêve, des offres vol + hôtel négociées jusqu'à -70% !</p>
+
+                        <p><a href="">INSCRIVEZ-VOUS</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item bg-warning h-100 ">
+                    <img src="slide3.jpg" class="w-100 h-100">
+                    <div class="infoContent p-3">
+                        <b>LA CARTE AIR FRANCE KLM - AMERICAN EXPRESS GOLD</b>
+                        <p>Réglez vos billets en 3 fois sans frais. Carte gratuite la 1ère année et 15 000 Miles de bienvenue.</p>
+
+                        <p><a href="">EN SAVOIR PLUS</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid tabulation mt-5">
+            <ul class="nav nav-tabs" style="border-bottom: none">
+                <li class="nav-item">
+                    <a href="#billet" class="nav-link active" data-bs-toggle="tab"><i class="fas fa-plane"></i> Acheter un billet</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#miles" class="nav-link" data-bs-toggle="tab"><i class="fas fa-database"></i> Uliliser des Miles</a>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="contents">
+                <div class="tab-pane active" id="billet">
+                    <form action="">
+                        <label class="d-block p-2 fw-bold" for="direction">Voyage</label>
+                        <select name="direction" id="direction" class="w-100 p-2">
+                            <option value="Aller-retour">Aller-retour</option>
+                            <option value="Aller">Aller</option>
+                            <option value="Retour">Retour</option>
+                        </select>
+
+                        <lebel class="d-block p-2 fw-bold">Départ de *</lebel>
+                        <input type="text" id="depart" class="w-100 p-2">
+
+                        <lebel class="d-block p-2 fw-bold">Arrive à *</lebel>
+                        <input type="text" id="arrive" class="w-100 p-2">
+                    </form>
+                </div>
+                <div class="tab-pane container" id="miles">
+                    <div class="p-3 d-flex justify-content-center align-items-center" style="gap: 20px;">
+                        <img src="https://www.static-af.com/assets/components/24.2.0/af/logo/fb-ivory-horizontal-large.svg">
+                        <div>
+                            <h2>MILES FLYING BLUE</h2>
+                            <p>Connectez-vous sur votre compte Flying Blue pour acheter un billet avec des Miles.</p>
+                        </div>
+                        <a href="#" class="p-2 border bg-danger text-decoration-none text-white">Se connecter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <!-- MODALS -->
+    <div class="modal" id="loginModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Connexion</h4>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="d-flex" style="flex-direction: column;gap: 10px">
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email" class="p-2 " required>
+
+
+                        <label for="pwd">password: </label>
+                        <input type="password" name="pwd" id="pwd" class="p-2 " required>
+
+                        <input type="submit" value="Log in" class="align-self-center btn btn-danger w-50">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+
+    <div class="modal" id="regModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Binevenu</h4>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="d-flex" style="flex-direction: column;gap: 10px">
+                        <label for="fname">first Name: </label>
+                        <input type="text" name="fname" id="fname" class="p-2 " required>
+
+                        <label for="lname">last Name: </label>
+                        <input type="text" name="lname" id="lname" class="p-2 " required>
+
+
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email" class="p-2 " required>
+
+
+                        <label for="pwd">password: </label>
+                        <input type="password" name="pwd" id="pwd" class="p-2 " required>
+
+                        <label for="pwd2">Confirm password: </label>
+                        <input type="password" name="pwd2" id="pwd2" class="p-2 " required>
+
+                        <div>
+                            <input type="checkbox" id="terms" name="terms" class="form-check-input">
+                            <label for="terms" class="form-check-label"> Accept our <a href="#">Privacy Policy</a></label>
+                        </div>
+
+                        <input type="submit" value="sign up" class="align-self-center btn btn-danger w-50">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ALERT -->
+    <div class="alert alert-danger position-absolute bottom-0 m-0 w-100">
+        <button data-bs-dismiss="alert" class="btn-close"></button>
+        <h4>COOKIES</h4>
+        <p>THIS WEBSITE COLLECT DATA TO MAKE DECISIONS!</p>
+
+    </div>
+
+
+
+</body>
+
+</html>
