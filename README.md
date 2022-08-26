@@ -2,4 +2,4 @@
 
 
 ------------
-[Link](https://github.com/assanimed/assanimed.github.io)
+[Link](https://assanimed.github.io)
